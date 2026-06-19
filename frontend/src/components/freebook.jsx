@@ -51,7 +51,7 @@ const [book,setbook] =useState([])
 useEffect(()=>{
    const getBook=async()=>{
     try{
-const res= await axios.get("http://localhost:4001/book")
+const res= await axios.get("https://bookstore-16el.onrender.com/book")
          console.log("heelo ji");
          
     setbook(res.data.filter(book=>book.price===0));

@@ -24,7 +24,7 @@ function Signup({ closemodal }) {
     }
     
 
-    await axios.post("http://localhost:4001/user/signup",userInfo)
+    await axios.post("https://bookstore-16el.onrender.com/user/signup",userInfo)
     .then((res)=>{
        console.log(userInfo)
         if(res){
